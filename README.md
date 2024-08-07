@@ -11,10 +11,15 @@ This project implements a neural network from scratch using NumPy, providing a h
   - MaxPooling
   - ReLU
   - Fully Connected
+
 - **Regularization:**
   - L2 Regularization
 - **Loss Functions:**
   - Softmax Cross-Entropy with Logits
+
+- **Regularization:**
+  - L2 Regularization
+
 - **Training and Evaluation:**
   - Functions for training, evaluating, and saving/loading models
 - **Gradient Checking:**
@@ -27,6 +32,7 @@ This project implements a neural network from scratch using NumPy, providing a h
 - Python 3.x
 - NumPy
 - Other dependencies listed in 'requirements.txt'
+
 
 ### Installation
 
@@ -50,33 +56,19 @@ Training the Network:
    ```bash
    python train.py
    ```
-The 'train.py' script sets up the network, trains it on the dataset and evaluates its performance. 
+The 'train.py' script sets up the network, gets the MNIST dataset, 
+trains the model and evaluates its performance. 
 You can run 'check_grads.py' to verify the correctness of gradients in each type of layer. 
 
-### Example
 
-Here is a sample code to build, train, and evaluate the network:
-```python
-import numpy as np
-import layers
-import nn
-
-# Build and train the network
-net = nn.build_network()
-train_x, train_y, valid_x, valid_y, test_x, test_y = nn.prepare_data()
-loss = layers.SoftmaxCrossEntropyWithLogits()
-
-# Training
-nn.train(train_x, train_y, valid_x, valid_y, net, loss, config)
-
-# Evaluate
-nn.evaluate("Test", test_x, test_y, net, loss, config)
-```
 
 ### Notes
 
 - Update 'config' in 'train.py' with your specific training hyperparameters (e.g., batch size, learning rate).
 - The 'check_grads.py' file is used for validating gradient computations against numerical gradients.
+- Change the architecture of network based on your problem and needs (what works for one problem
+most likely will not work for the other one)
 
 ### Contribution
 Feel free to open issues or submit pull requests. Contributions are welcome to enhance functionality and performance.
+

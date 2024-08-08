@@ -47,7 +47,11 @@ This project implements a neural network from scratch using NumPy, providing a h
    ```bash
    pip install -r requirements.txt
    ```
-   
+4. Before running the project, you need to build necessary Cython extensions which are used for performance
+optimization and efficient memory handling.
+   ```bash
+   python setup_cython.py build_ext --inplace
+   ```
 ### Usage
 
 Training the Network:

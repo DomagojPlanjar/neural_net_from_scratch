@@ -17,9 +17,6 @@ This project implements a neural network from scratch using NumPy, providing a h
 - **Loss Functions:**
   - Softmax Cross-Entropy with Logits
 
-- **Regularization:**
-  - L2 Regularization
-
 - **Training and Evaluation:**
   - Functions for training, evaluating, and saving/loading models
 - **Gradient Checking:**
@@ -40,6 +37,7 @@ This project implements a neural network from scratch using NumPy, providing a h
    ```bash
    git clone https://github.com/YourUsername/neural_net_from_scratch.git
    cd neural_net_from_scratch
+
    ```
 2. **Set up a Virtual Environment:**
    ```bash
@@ -71,4 +69,5 @@ most likely will not work for the other one)
 
 ### Contribution
 Feel free to open issues or submit pull requests. Contributions are welcome to enhance functionality and performance.
+
 

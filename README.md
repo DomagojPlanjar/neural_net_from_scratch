@@ -35,7 +35,7 @@ This project implements a neural network from scratch using NumPy, providing a h
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YourUsername/neural_net_from_scratch.git
+   git clone https://github.com/DomagojPlanjar/neural_net_from_scratch.git
    cd neural_net_from_scratch
 
    ```
